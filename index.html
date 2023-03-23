@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body onload="reset()">
+
+<div class="wrapper flex">
+  <main class="main">
+
+    <section class="header container">
+      <h1 class="header__title">Simple, traffic-based pricing</h1>
+      <p class="header__text">Sign-up for our 30-day trial. No credit card required.</p>
+    </section>
+
+    <section class="card container">
+        <div class="card-grid">
+          <p class="card__title">100k Pageviews</p>
+          <input class="input-range" id="input-range" type="range" min="1" max="30">
+          <div class="card__price flex">
+            <div class="price flex">$<span id="value-output">16</span>.00</div>
+            <p>/ month</p>
+          </div>
+        </div>
+        <div class="discount flex">
+          <p class="discount__m">Monthly Billing</p>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          <p class="discount_y">Yearly Billing</p>
+          <p class="discount__value" id="discount"></p>
+        </div>
+      
+      <hr>
+
+      <div class="section-two flex">
+        <ul class="list flex">
+          <li class="list__item flex">
+            <img src="./assets/images/icon-check.svg" alt="">
+            <p>Unlimited websites</p>
+          </li>
+          <li class="list__item flex">
+            <img src="./assets/images/icon-check.svg" alt="">
+            <p>100% data ownership</p>
+          </li>
+          <li class="list__item flex">
+            <img src="./assets/images/icon-check.svg" alt="">
+            <p>Email reports</p>
+          </li>
+        </ul>
+        <button class="btn">Start my trial</button>
+      </div>
+    </section>
+
+  </main>
+</div> <!-- wrapper end -->
+
+</body>
+</html>
